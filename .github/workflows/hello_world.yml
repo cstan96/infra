@@ -11,6 +11,16 @@ on:
 
 jobs:
     hello:
-        runs-on: ubuntu-latest
+        runs-on: git-runner01
         steps:
             - uses: actions/checkout@v4
+            - name: hello world
+              run: echo "Hello World"
+              shell: bash
+    goodbye:
+        runs-on: git-runner01
+        steps:
+            - uses: actions/checkout@v4
+            - name: goodbye world
+              run: echo "Goodbye World"
+              shell: bash

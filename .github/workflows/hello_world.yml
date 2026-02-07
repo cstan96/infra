@@ -11,14 +11,14 @@ on:
 
 jobs:
     hello:
-        runs-on: git-runner01
+        runs-on: self-hosted
         steps:
             - uses: actions/checkout@v4
             - name: hello world
               run: echo "Hello World"
               shell: bash
     goodbye:
-        runs-on: git-runner01
+        runs-on: self-hosted
         steps:
             - uses: actions/checkout@v4
             - name: goodbye world
